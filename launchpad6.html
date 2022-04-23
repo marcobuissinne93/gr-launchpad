@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+        </script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.10/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body> 
+        <!-- <div class="ui inverted segment" style="border-radius: 0; margin: 0;">
+            
+            <div class="ui inverted secondary pointing menu">
+              <a class="active item">
+                Home
+              </a>
+              <a class="item">
+                Messages
+              </a>
+              <a class="item">
+                Friends
+              </a>
+              <div class="right menu">
+                <div class="item">
+                    <div class="ui primary button">Join Platform</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- SECTION 1 -->
+          <div class="uk-position-relative" style="height: 100vh; max-height: 710px; margin-bottom: 0%; overflow: hidden;">
+            <div class="uk-inline" style="overflow: hidden;">
+                <img src="https://user-images.githubusercontent.com/104196868/164677673-1851ae8f-aca8-4ad7-9393-dab820bb173f.png" width="2000" height="710" alt="">
+                <div class="uk-overlay-primary uk-position-cover"></div>
+                <div class="uk-overlay uk-position-top uk-light" style="margin-left: 13%; margin-top: 8%">
+                    <h1 class="uk-heading-medium uk-text-bold">Are you up to the <br> challenge</h1>
+                    <h4 class="uk-heading-small uk-text-light">Let us take your start-up <br> to the next level.</h4>
+                    <div class="ui big primary button" id="js-apply-now" style="margin-top: 3%">
+                        Apply Now
+                    </div>
+                    <!-- <div id="test" style="width: 70%"></div> -->
+                    <!-- <div class="ui fluid inverted popup top left transition hidden" style="z-index: 1100; overflow:auto">
+                      <div class="ui three column divided center aligned grid">
+                        <div class="column uk-text-large uk-button uk-button-secondary ">Customer Experience Solution</div>
+                        <div class="column uk-text-large uk-button uk-button-secondary">Innovative Product Solution</div>
+                        <div class="column uk-text-large uk-button uk-button-secondary uk-button-large">New way of of doing things</div>
+                      </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="uk-position-top">
+                <nav class="uk-navbar-container uk-margin uk-navbar-transparent" style="margin-bottom:0; z-index: 980;" uk-navbar>
+                    <div class="uk-navbar-left" style="margin-left: 3%">
+                        <ul class="uk-navbar-nav uk-dark">
+                            <li class="uk-text-bold" style="color:white !important"><a style="color:white" href="#">Home</a></li>
+                            <li class="uk-text-bold" style="color:white !important"><a href="#">Challenges</a></li>
+                            <li class="uk-text-bold" style="color:white !important"><a href="#">Team</a></li>
+                            <li class="uk-text-bold" style="color:white !important"><a href="#">FAQ</a></li>
+                            <!-- <li class="uk-text-bold" style="color:white !important"><a href="#">Contact</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <a class="uk-navbar-item uk-logo" href="#">
+                            <img src="https://user-images.githubusercontent.com/104196868/164679030-50f2c04b-e18b-498a-8e88-6118ce06bb2f.png" height="250" width="250">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right" style="margin-right: 3%">
+                        <button class="ui primary button" style="margin-left: 50px">Contact Us</button>
+                    </div>
+            </nav>
+            </div>
+            <div style="width: 1000px">
+              <div class="ui inverted popup top left transition centered hidden" style="z-index: 1100; overflow:auto">
+                <div class="ui vertical inverted menu" style="width: 25rem !important">
+                  <a class="item" id="scroll-to-1">
+                    Customer Experience Solution
+                    <div class="uk-float-right"><i class="angle right icon"></i></div>
+                  </a>
+                  <a class="item" id="scroll-to-2">
+                    Innovative Product Solution
+                    <div class="uk-float-right"><i class="angle right icon"></i></div>
+                  </a>
+                  <a class="item" id="scroll-to-3">
+                    New way of doing things
+                    <div class="uk-float-right"><i class="angle right icon"></i></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div id="test">Testing</div> -->
+
+
+        <!-- SECTION 2 -->
+        <div class='uk-panel uk-light' id="challenge-section" style="text-align: center;  background-color: rgb(0,0,0); padding-top: 80px; padding-bottom: 200px">
+            <h1 class="uk-heading-medium uk-text-bold uk-align-center" style="margin-bottom: 0px !important">Challenges</h1>
+            <h1 class="uk-heading-small uk-text-muted uk-text-light uk-align-center" style="margin-top: 0px !important">What challenge does your <br> business solve?</h1>
+            <div class="ui grid" style="padding: 45px 100px 0px 100px">
+                <div class="three column row">
+                  <div class="column">
+                    <div class="ui shape left">
+                        <div class="sides">
+                          <div class="active side">
+                            <div class="content">
+                              <div class="center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.3" src="https://user-images.githubusercontent.com/104196868/164677994-ac19ea2c-883f-4fba-8066-525e57a233ec.png" width="1800" height="1200" alt="">
+                                    <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                    <div class="uk-overlay uk-dark uk-position-center">
+                                        <h1 class="uk-header-small" style="margin-bottom:0">Customer Experience</p>
+                                        <button class="uk-button uk-button-text" id="tileFlipR1" style="margin-top:0">Show More</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="side">
+                            <div class="content">
+                              <div class="center" style="position: relative">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.05" src="https://user-images.githubusercontent.com/104196868/164677994-ac19ea2c-883f-4fba-8066-525e57a233ec.png" width="1800" height="1200" alt="">
+                                    <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                    <div class="uk-overlay uk-dark uk-position-left">
+                                        <h1 class="uk-text-small" style="margin-bottom:0">Customer Experience</p>
+                                        <!-- <button class="uk-button uk-button-text" id="tileFlipL1" style="margin-top:0"><i class="arrow left icon"></i>Back</button> -->
+                                    </div>
+                                    <div class="uk-overlay uk-dark uk-position-right">
+                                        <div class="uk-float-rightm">
+                                            <button class="uk-button uk-button-text" id="tileFlipL1" style="margin-top:0"><i class="arrow left icon"></i>Back</button>
+                                        </div>
+                                        <div style="position: absolute; bottom: 20px; right: 20px">
+                                            <button class="ui button primary">Apply</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="ui shape center">
+                            <div class="sides">
+                              <div class="active side">
+                                <div class="content">
+                                  <div class="center">
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.4" src="https://user-images.githubusercontent.com/104196868/164678131-6cc6222c-d31c-435c-9282-2c55d57e67cf.png" width="1800" height="1200" alt="">
+                                        <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                        <div class="uk-overlay uk-dark uk-position-center">
+                                            <h1 class="uk-header-small" style="margin-bottom:0">Innovative Product <br> Solutions</p>
+                                            <button class="uk-button uk-button-text" id="tileFlipR2" style="margin-top:0">Show More</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="side">
+                                <div class="content">
+                                  <div class="center" style="position: relative">
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.05" src="https://user-images.githubusercontent.com/104196868/164678131-6cc6222c-d31c-435c-9282-2c55d57e67cf.png" width="1800" height="1200" alt="">
+                                        <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                        <div class="uk-overlay uk-dark uk-position-left">
+                                            <h1 class="uk-text-small" style="margin-bottom:0">Innovative Product Solutions</p>
+                                            <!-- <button class="uk-button uk-button-text" id="tileFlipL2" style="margin-top:0"><i class="arrow left icon"></i>Back</button> -->
+                                        </div>
+                                        <div class="uk-overlay uk-dark uk-position-right">
+                                            <div class="uk-float-rightm">
+                                                <button class="uk-button uk-button-text" id="tileFlipL2" style="margin-top:0"><i class="arrow left icon"></i>Back</button>
+                                            </div>
+                                            <div style="position: absolute; bottom: 20px; right: 20px">
+                                                <button class="ui button primary">Apply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+    
+                        </div>
+                        <div class="column">
+                            <div class="ui shape right">
+                                <div class="sides">
+                                  <div class="active side">
+                                    <div class="content">
+                                      <div class="center">
+                                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                            <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.3" src="https://user-images.githubusercontent.com/104196868/164678329-e0f94b7a-d370-4600-af6b-c695b57ce63d.png" width="1800" height="1200" alt="">
+                                            <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                            <div class="uk-overlay uk-dark uk-position-center">
+                                                <h1 class="uk-header-small" style="margin-bottom:0">New ways of <br> doing things</p>
+                                                <button class="uk-button uk-button-text" id="tileFlipR3" style="margin-top:0">Show More</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="side">
+                                    <div class="content">
+                                      <div class="center" style="position: relative;">
+                                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                            <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.05" src="https://user-images.githubusercontent.com/104196868/164678329-e0f94b7a-d370-4600-af6b-c695b57ce63d.png" width="1800" height="1200" alt="">
+                                            <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                            <div class="uk-overlay uk-dark uk-position-left">
+                                                <h1 class="uk-text-small" style="margin-bottom:0">New ways of doing things</h1>
+                                                <!-- <button class="uk-button uk-button-text" id="tileFlipL3" style="margin-top:0"><i class="arrow left icon"></i>Back</button>                                                 -->
+                                            </div>
+                                            <div class="uk-overlay uk-dark uk-position-right">
+                                                <div class="uk-float-rightm">
+                                                    <button class="uk-button uk-button-text" id="tileFlipL3" style="margin-top:0"><i class="arrow left icon"></i>Back</button>
+                                                </div>
+                                                <div style="position: absolute; bottom: 20px; right: 20px">
+                                                    <button class="ui button primary">Apply</button>
+                                                </div> 
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="ui middle aligned four column centered grid">
+                                        <div class="row">
+                                          <div class="column">
+                                            <img>
+                                          </div>
+                                          <div class="column">
+                                            <img>
+                                            <img>
+                                          </div>
+                                          <div class="column">
+                                            <img>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+        
+                            </div>
+                </div>
+            </div>
+                
+               
+        </div>
+
+
+
+        <!-- SECTION 3 -->
+        <div class='uk-panel uk-dark' style="text-align: left; padding: 5% 15% 5% 15%">
+        <h1 class="uk-heading-medium uk-text-bold uk-align-center" style="padding-bottom: 60px; text-align: center;">
+            What's in it for me?
+        </h1>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="https://user-images.githubusercontent.com/104196868/164675041-1b5d343a-2234-4469-b222-30910134f054.png" alt="" uk-cover>
+                <canvas width="600" height="300"></canvas>
+            </div>
+            <div>
+                <a class="uk-card-body">
+                    <h3 class="uk-card-title">Validate your POC in our <b>Sandbox</b> Environment</h3>
+                    <button class="ui basic button js-modal1">
+                      <!-- <i class="icon user"></i> -->
+                      More Info
+                    </button>
+                  </a>
+            </div>
+        </div>
+        
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <img src="https://user-images.githubusercontent.com/104196868/164676812-8277ad83-7673-4c76-b6dc-e77f3c2ce6a4.png" alt="" uk-cover>
+                <canvas width="600" height="300"></canvas>
+            </div>
+            <div>
+                <a class="uk-card-body">
+                    <h3 class="uk-card-title">Access to our Industry Experts</h3>
+                    <button class="ui basic button js-modal2">
+                      <!-- <i class="icon user"></i> -->
+                      More Info
+                    </button> 
+                  </a>
+            </div>
+        </div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="https://user-images.githubusercontent.com/104196868/164676986-75a6ee4b-ca54-4c4e-b61e-42022b68cf0f.png" alt="" uk-cover>
+                <canvas width="600" height="300"></canvas>
+            </div>
+            <div>
+                <a class="uk-card-body">
+                    <h3 class="uk-card-title">Speed to Market</h3>
+                    <button class="ui basic button js-modal3">
+                      <!-- <i class="icon user"></i> -->
+                      More Info
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <img src="https://user-images.githubusercontent.com/104196868/164677020-d12d36f7-4648-4459-8d2e-bd70615525b8.png" alt="" uk-cover>
+                <canvas width="600" height="300"></canvas>
+            </div>
+            <div>
+                <a class="uk-card-body">
+                    <h3 class="uk-card-title">Retain your IP</h3>
+                    <button class="ui basic button js-modal4">
+                      <!-- <i class="icon user"></i> -->
+                      More Info
+                    </button>
+                </a>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- SECTION 3 MODAL-->
+        <div class="ui modal">
+          <i class="close icon"></i>
+          <div class="header js-modal-header">
+            Profile Picture
+          </div>
+          <div class="image content">
+            <div class="description">
+              <div class="ui placeholder">
+                <div class="paragraph">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <div class="paragraph">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class='uk-panel uk-light' style="text-align: center; padding-top: 80px; padding-bottom: 85px; background-color: rgb(0,0,0)">
+            <h1 class="uk-heading-medium uk-text-bold uk-align-center">Partner with us <br> to the next level</h1>
+            <div class="ui grid" style="padding: 45px 100px 0px 100px">
+                <div class="three column row">
+                  <div class="column">
+                    <div class="ui shape left__section4">
+                        <div class="sides">
+                          <div class="active side">
+                            <div class="content">
+                              <div class="center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.4" src="https://user-images.githubusercontent.com/104196868/164677359-88419c38-9ba3-4252-b013-b84e9bc72552.png" width="1800" height="1200" alt="">
+                                    <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                    <div class="uk-overlay uk-dark uk-position-center">
+                                        <h1 class="uk-header-small" style="margin-bottom:0">Ideate</p>
+                                        <button class="uk-button uk-button-text" id="tileFlipR1__section4" style="margin-top:0">Show More</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="side">
+                            <div class="content">
+                              <div class="center" style="position: relative">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.05" src="https://user-images.githubusercontent.com/104196868/164677359-88419c38-9ba3-4252-b013-b84e9bc72552.png" width="1800" height="1200" alt="">
+                                    <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                    <div class="uk-overlay uk-dark uk-position-left">
+                                        <h1 class="uk-text-small" style="margin-bottom:0">Ideate</p>
+                                        <!-- <button class="uk-button uk-button-text" id="tileFlipL1__section4" style="margin-top:0"><i class="arrow left icon"></i>Back</button> -->
+                                    </div>
+                                    <div class="uk-overlay uk-dark uk-position-right">
+                                        <div class="uk-float-right">
+                                            <button class="uk-button uk-button-text" id="tileFlipL1__section4" style="margin-top:0"><i class="arrow left icon"></i>Back</button>
+                                        </div>
+                                        <div style="position: absolute; bottom: 20px; right: 20px">
+                                            <button class="ui button primary">Apply</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="ui shape center__section4">
+                            <div class="sides">
+                              <div class="active side">
+                                <div class="content">
+                                  <div class="center">
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.4" src="https://user-images.githubusercontent.com/104196868/164677376-8687a8bc-7e2d-47e8-a648-909cf2c4dd64.png" width="1800" height="1200" alt="">
+                                        <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                        <div class="uk-overlay uk-dark uk-position-center">
+                                            <h1 class="uk-header-small" style="margin-bottom:0">Incubate and <br> Validate</p>
+                                            <button class="uk-button uk-button-text" id="tileFlipR2__section4" style="margin-top:0">Show More</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="side">
+                                <div class="content">
+                                  <div class="center" style="position: relative">
+                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                        <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.05" src="https://user-images.githubusercontent.com/104196868/164677376-8687a8bc-7e2d-47e8-a648-909cf2c4dd64.png" width="1800" height="1200" alt="">
+                                        <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                        <div class="uk-overlay uk-dark uk-position-left">
+                                            <h1 class="uk-text-small" style="margin-bottom:0">Incubate and Validate</p>
+                                            <!-- <button class="uk-button uk-button-text" id="tileFlipL2__section4" style="margin-top:0"><i class="arrow left icon"></i>Back</button> -->
+                                        </div>
+                                        <div class="uk-overlay uk-dark uk-position-right">
+                                            <div class="uk-float-right">
+                                                <button class="uk-button uk-button-text" id="tileFlipL2__section4" style="margin-top:0"><i class="arrow left icon"></i>Back</button>
+                                            </div>
+                                            <div style="position: absolute; bottom: 20px; right: 20px">
+                                                <button class="ui button primary">Apply</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+    
+                        </div>
+                        <div class="column">
+                            <div class="ui shape right__section4">
+                                <div class="sides">
+                                  <div class="active side">
+                                    <div class="content">
+                                      <div class="center">
+                                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                            <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.4" src="https://user-images.githubusercontent.com/104196868/164677380-10cad8f5-b08d-43f8-baf3-7f6acad4d34e.png" width="1800" height="1200" alt="">
+                                            <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                            <div class="uk-overlay uk-dark uk-position-center">
+                                                <h1 class="uk-header-small" style="margin-bottom:0">Scale</p>
+                                                <button class="uk-button uk-button-text" id="tileFlipR3__section4" style="margin-top:0">Show More</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <div class="side">
+                                    <div class="content">
+                                      <div class="center" style="position: relative">
+                                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                            <img class="uk-transition-scale-up uk-transition-opaque" style="opacity:0.05" src="https://user-images.githubusercontent.com/104196868/164677380-10cad8f5-b08d-43f8-baf3-7f6acad4d34e.png" width="1800" height="1200" alt="">
+                                            <!-- <div class="uk-overlay-primary uk-position-cover uk-transition-fade"></div> -->
+                                            <div class="uk-overlay uk-dark uk-position-left">
+                                                <h1 class="uk-text-small" style="margin-bottom:0">Scale</p>
+                                                <!-- <button class="uk-button uk-button-text" id="tileFlipL3__section4" style="margin-top:0"><i class="arrow left icon"></i>Back</button> -->
+                                            </div>
+                                            <div class="uk-overlay uk-dark uk-position-right">
+                                                <div class="uk-float-right">
+                                                    <button class="uk-button uk-button-text" id="tileFlipL3__section4" style="margin-top:0"><i class="arrow left icon"></i>Back</button>
+                                                </div>
+                                                <div style="position: absolute; bottom: 20px; right: 20px">
+                                                    <button class="ui button primary">Apply</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>        
+                            </div>
+                </div>
+            </div>               
+        </div>
+
+
+        <!-- PARTNERS -->
+        <div class='uk-panel uk-light' style="text-align: center; padding-bottom: 100px; background-color: rgb(0,0,0)">
+          <h1 class="uk-heading-medium uk-text-bold uk-align-center" style="padding-bottom: 0px; color: rgb(129, 126, 126)">Our Partners</h1>
+          <div class="ui middle aligned four column centered relaxed grid" style = "padding: 0 25% 20px 25%;">
+            <div class="row">
+              <div class="column">
+                <img src="https://user-images.githubusercontent.com/104196868/164678823-b183a881-20e4-4ce0-bb96-8ba6a4535fcf.png" width="1800" height="1200" alt="">            
+              </div>
+              <div class="column">
+                <img src="https://www.capitallegacy.co.za/wp-content/themes/capitallegacy/dist/images/logo_77f61aaf.svg" width="1800" height="1200" alt=""> <!-- "https://www.capitallegacy.co.za/wp-content/themes/capitallegacy/dist/images/logo_77f61aaf.svg" -->
+                <!-- <img src="https://guardriskgroup-my.sharepoint.com/personal/marco_buissinne_guardrisk_co_za/Documents/images/onespark.png" width="1800" height="1200" alt=""> -->
+              </div>
+              <div class="column">
+                <img src="https://user-images.githubusercontent.com/104196868/164678834-94515148-5c73-4089-9745-4dd0683a0d56.png" width="1800" height="1200" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- SECTION 5 -->
+        <div class='uk-panel uk-dark' style="text-align: left; padding: 5% 8% 8% 10%">
+          <h1 class="uk-heading-medium uk-text-bold uk-align-center" style="padding-bottom: 60px; text-align: center;">
+              Meet the Team
+          </h1>
+          <div class="ui link centered raised cards">
+            <div class="card">
+              <div class="image">
+                <img src="https://user-images.githubusercontent.com/104196868/164682165-b4bb7aba-bc92-4621-ba0d-0ce4e5ce4c68.png">
+              </div>
+              <div class="content">
+                <div class="header">Person 1</div>
+                <div class="meta">
+                  <a>Head of Launchpad</a>
+                </div>
+              </div>
+              <div class="extra content">
+                <a class="'right floated">
+                  <i class="linkedin large icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="https://user-images.githubusercontent.com/104196868/164682182-7aa7b068-7599-49fc-a5dd-6547c576905c.png">
+              </div>
+              <div class="content">
+                <div class="header">Person 2</div>
+                <div class="meta">
+                  <span class="date">Lead, Technical</span>
+                </div>
+              </div>
+              <div class="extra content">
+                <a class="'right floated">
+                  <i class="linkedin large icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="https://user-images.githubusercontent.com/104196868/164682186-537f0009-eae9-427e-a1ea-74c1558d5631.png">
+              </div>
+              <div class="content">
+                <div class="header">Person 3</div>
+                <div class="meta">
+                  <a>Lead, Finance and Investments</a>
+                </div>
+              </div>
+              <div class="extra content">
+                <a class="'right floated">
+                  <i class="linkedin large icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div style="padding: 0 8%">
+            <hr style="margin: 0">
+            <div class="uk-position-relative">
+              <div class="uk-position-top">
+                  <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                      <div class="uk-navbar-left">
+                        <button class="ui secondary button">Contact</button>
+                        <!-- <button class="ui button">Apply</button> -->
+                          <div class="uk-navbar-nav">
+                            
+                              <li class='uk-tex-bold'><a href="#"><i class="copyright outline icon" style="margin-bottom: 6px; color:black !important">
+                                
+                              </i><span class="uk-flex-right uk-text-bold" style="color:black !important">-&nbsp 2022 Launchpad</span></a></li>
+                          </div>
+                      </div>
+                      <div class="uk-navbar-right">
+                        <div class="uk-navbar-nav">
+                            
+                          <li style="padding-right: 20px"><h4 class="uk-text-large uk-text-lighter">Follow us</h4></li>
+                          <!-- <li class="'uk-align-center"><i class="ui linkedin large icon"></i></li> -->
+                        </div>
+                        <a uk-icon="linkedin" style="padding-right: 20px"></a>
+                        <a uk-icon="facebook" style="padding-right: 20px"></a>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+          </div>
+
+
+
+
+          <!-- <div class="ui big primary button" id="js-apply-now2" style="margin-top: 3%">
+            Apply Now
+        </div>
+          <div class="ui fluid popup top left transition hidden" style="z-index: 1001">
+            <div class="ui three column divided center aligned inverted grid">
+              <div class="column">1</div>
+              <div class="column">2</div>
+              <div class="column">3</div>
+            </div>
+          </div> -->
+          
+
+        <script>
+            $(function(){
+                const obj = [
+                    {id: 1, position: 'left'},
+                    {id: 2, position: 'center'},
+                    {id: 3, position: 'right'}
+                ]
+                obj.map((item) => {
+                    // section 1
+                    $(`#tileFlipR${item.id}`).on('click', function(){
+                      $(`.shape.${item.position}`).shape('flip right');
+                    }) 
+                    // section 4l
+                    $(`#tileFlipR${item.id}__section4`).on('click', function(){
+                    $(`.shape.${item.position}__section4`).shape('flip right');
+                    }) 
+
+                    // section 1
+                    $(`#tileFlipL${item.id}`).on('click', function(){
+                    $(`.shape.${item.position}`).shape('flip left');
+                    }) 
+                    $(`#tileFlipL${item.id}__section4`).on('click', function(){
+                    $(`.shape.${item.position}__section4`).shape('flip left');
+                    }) 
+                    // section 4
+                })
+
+                // Modal dialog events
+                const eventType = [
+                  {id: 1, heading: 'Validate your POC in our Sandbox Environment'},
+                  {id: 2, heading: 'Access to our Industry Experts'},
+                  {id: 3, heading: 'Speed to Market'},
+                  {id: 4, heading: 'Retain your IP'}
+                ]
+
+                eventType.map((item) => {
+                  $(`.js-modal${item.id}`).on('click', () => {
+                  $('.ui.modal')
+                      .modal('show');
+                  $('.js-modal-header').text(`${item.heading}`)
+                  }) 
+                })
+
+                // apply now 
+                // $('#js-apply-now2').on('click', () => {
+                //   $('.ui.popup').popup('show')
+                // })
+                $('#js-apply-now')
+                  .popup({
+                    popup : $('.popup'),
+                    on    : 'click',
+                    target: '#js-apply-now',
+                    position: 'right center',
+                    closable: true,
+                    hideOnScroll: true, 
+                    // lastResort: 'bottom left',
+                    inline: true
+                    // onShow: function(){
+                    //     resizePopup();
+                    // },
+                  });
+
+                  obj.map((item) => {
+                    $(`#scroll-to-${item.id}`).click(function() {
+                      $([document.documentElement, document.body]).animate({
+                          scrollTop: $("#challenge-section").offset().top
+                      }, 500);
+                      // setTimeout(function(){
+                        $(`.shape.${item.position}`).shape('flip right')
+                      // }, 550)
+                      
+                    });   
+                  })
+
+
+                // var resizePopup = function(){$('.popup').css('max-height', $(window).height());};
+
+                // $(window).resize(function(e){
+                //     resizePopup();
+                // });
+
+            })
+        </script>
+
+        <style>
+            body {
+                background-color: rgb(0,0,0)
+            }
+
+            .ui.primary.button, .ui.primary.buttons .button {
+                background-color: #fdb913 !important;
+                color: rgb(0,0,0);
+                text-shadow: none;
+                background-image: none;
+            }
+
+            /* .uk-active {
+              color: rgb(188, 4, 4) !important;
+            } */
+        </style>
+    </body>
+</html>
